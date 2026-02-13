@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Property Example</title>
+    <style>
+        .left-box {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            float: left;
+            margin: 10px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .right-box {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            float: right;
+            margin: 10px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .clear-box {
+            background-color: yellow;
+            padding: 20px;
+            clear: both;   /* Important line */
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left-box">Float Left</div>
+    <div class="right-box">Float Right</div>
+
+    <div class="clear-box">
+        This box is below both floated boxes (clear: both)
+    </div>
+
+</body>
+</html>
+</body>
+</html>
