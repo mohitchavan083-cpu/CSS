@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricWorld | Live Cricket</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #03045e;
+    padding: 1rem 5%;
+    color: white;
+}
+
+.logo span { color: #00b4d8; }
+
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: white; text-decoration: none; font-weight: bold; }
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #00b4d8;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Score Card */
+.score-container {
+    padding: 50px 5%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.score-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 5px solid #03045e;
+    width: 300px;
+}
+
+.status {
+    font-size: 0.8rem;
+    color: green;
+    font-weight: bold;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Cric<span>World</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Matches</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Experience the Thrill of Cricket</h1>
+        <p>Live Scores, Stats, and Exclusive Updates</p>
+        <button class="btn">View Live Scores</button>
+    </header>
+
+    <section class="score-container">
+        <div class="score-card">
+            <h3>T20 World Cup</h3>
+            <p><strong>IND:</strong> 185/4 (20.0)</p>
+            <p><strong>AUS:</strong> 160/9 (20.0)</p>
+            <span class="status">India won by 25 runs</span>
+        </div>
+    </section>
+
+</body>
+</html>
